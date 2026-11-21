@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="zh-Hant" data-viewer-mode="static" data-viewer-palette="burgundy">
+<head><link rel="icon" href="./viewer/favicon.svg" type="image/svg+xml">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>高雄醫學大學_濟世大樓_4F(醫管資系) · 學校與學習｜360 導覽</title>
+  <link rel="stylesheet" href="./viewer/tour-editor.css">
+  <link rel="stylesheet" href="./viewer/photoswipe.css">
+  <script type="module" src="./viewer/static-tour-viewer.js"></script>
+  <link rel="stylesheet" href="./viewer/viewer-branding.css">
+  <link rel="stylesheet" href="./viewer/tour-viewer.css">
+  <link rel="stylesheet" href="./viewer/viewer-ui-layout.css">
+  <script src="./viewer/viewer-ui-layout.js" defer></script>
+<link rel="stylesheet" href="./viewer/ui-close.css"><link rel="stylesheet" href="./viewer/gallery.css"><link rel="stylesheet" href="./viewer/model3d.css"><link rel="stylesheet" href="./viewer/map-hotspot.css"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; connect-src 'self'; frame-src https://www.youtube-nocookie.com https://player.vimeo.com https://google.com https://www.google.com https://maps.google.com https://google.com.tw https://www.google.com.tw https://maps.google.com.tw https:; object-src 'none'; base-uri 'self'"></head>
+<body class="visitor">
+  <div id="viewerPreviewBadge" hidden>PREVIEW｜預覽模式</div>
+  <main id="viewer"><div id="pano"></div><div id="markers"></div></main>
+  <img id="viewerDecoration" alt="" aria-hidden="true" hidden>
+  <header class="visitorTitle">
+    <a class="studioBrand" href="https://super720.com" target="_blank" rel="noopener noreferrer">Super720.com｜Ai Virtual Tour Studio</a>
+    <div class="visitorTitleRow"><h1 id="tourTitle">360 導覽</h1><span id="sceneTitle"></span></div>
+    <button id="descriptionToggle" class="projectDescriptionToggle" hidden aria-expanded="false">專案說明</button>
+    <p id="projectDescription" hidden></p>
+  </header>
+  <p id="viewerStatus" role="status">正在載入…</p><aside id="floorplanSheet" hidden aria-label="平面圖"><header><div><span>FLOOR PLAN</span><strong id="floorplanTitle">平面圖</strong><select id="visitorPlanSelect" aria-label="選擇平面圖" hidden></select></div><div class="floorplanZoomControls" role="group" aria-label="平面圖縮放"><button id="floorplanZoomOut" type="button" aria-label="縮小平面圖">−</button><button id="floorplanZoomFit" type="button" aria-label="平面圖自適應">適應</button><button id="floorplanZoomIn" type="button" aria-label="放大平面圖">＋</button></div><button id="closeFloorplanSheet" type="button" aria-label="關閉平面圖">×</button></header><div id="visitorFloorplanViewport"><div id="visitorFloorplanCanvas"><img id="visitorFloorplanImage" alt="平面圖"><div id="visitorFloorplanPoints"></div></div></div><p id="floorplanLocationStatus" class="floorplanLocationStatus" role="status" hidden>目前場景未標示於這張平面圖</p><p>點選圓點切換場景；扇形表示目前觀看方向。</p></aside>
+  <aside id="viewRadar" hidden aria-label="相對視角雷達"><svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="29"/><path id="radarCone"/><circle class="radarCenter" cx="32" cy="32" r="2"/></svg></aside>
+  <footer class="visitorFooter">
+    <div id="visitorFilmstrip" class="visitorFilmstrip">
+      <button id="sceneScrollPrev" class="filmstripArrow" type="button" aria-label="縮圖向左捲動" title="向左捲動">‹</button>
+      <nav id="visitorScenes" aria-label="場景縮圖" inert></nav>
+      <button id="sceneScrollNext" class="filmstripArrow" type="button" aria-label="縮圖向右捲動" title="向右捲動">›</button>
+    </div>
+    <div id="dock">
+      <button id="thumbToggle" title="場景縮圖" aria-label="場景縮圖" aria-pressed="false"><img src="./viewer/icons/scenes.svg" alt=""></button>
+      <button id="floorplanToggle" hidden title="平面圖" aria-label="平面圖" aria-pressed="false"><img src="./viewer/icons/floorplan.svg" alt=""></button>
+      <button id="rotate" title="自動旋轉" aria-label="自動旋轉" aria-pressed="false"><img src="./viewer/icons/rotate.svg" alt=""></button>
+    <button id="drawerToggle" aria-label="展開觀看工具" title="展開觀看工具" aria-expanded="false" aria-controls="dock visitorScenes"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 15 6-6 6 6"/></svg></button>
+      <button id="tourPlay" title="自動導覽：每 10 秒切換場景" aria-label="自動導覽：每 10 秒切換場景" aria-pressed="false"><img src="./viewer/icons/tour.svg" alt=""></button>
+      <button id="radarToggle" title="視角雷達" aria-label="視角雷達" aria-pressed="false"><img src="./viewer/icons/radar.svg" alt=""></button>
+      <button id="planet" title="重播小行星開場" aria-label="重播小行星開場"><img src="./viewer/icons/planet.svg" alt=""></button>
+    </div>
+
+  </footer>
+  <div class="visitorShare"><button id="share" title="分享" aria-label="分享"><img src="./viewer/icons/share.svg" alt=""></button><div class="viewerMetric" title="近 90 天觀看次數"><span class="metricIcon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></svg></span><span id="viewCount" aria-label="近 90 天觀看次數">—</span></div><div class="viewerMetric"><button id="like" title="按讚" aria-label="按讚" aria-pressed="false"><svg viewBox="0 0 24 24"><path d="M20 5c-3-3-6-1-8 1-2-2-5-4-8-1-5 5 2 10 8 15 6-5 13-10 8-15Z"/></svg></button><span id="likeCount" aria-label="按讚次數">—</span></div></div>
+  <div class="visitorFullscreen"><button id="fullscreen" title="全螢幕" aria-label="全螢幕"><img src="./viewer/icons/fullscreen.svg" alt=""></button></div>
+  <dialog id="passwordDialog"><h2>此導覽需要 PIN 碼</h2><form id="passwordForm"><label>觀看 PIN 碼<input id="visitorPassword" type="text" required maxlength="6" autocomplete="off"></label><button>開啟導覽</button><p id="passwordError" role="status"></p></form></dialog>
+  <dialog id="poiViewer"><div class="poiHeading"><h2 id="poiViewTitle"></h2><button id="closePoiView" aria-label="關閉內容"></button></div><div id="poiMediaView" class="webPreview"></div><div id="poiViewContent" class="richBody"></div><a id="poiViewLink" target="_blank" rel="noopener noreferrer" hidden>開啟網站 ↗</a><p id="poiViewUrl"></p></dialog>
+  <dialog id="shareDialog" aria-labelledby="visitorShareTitle"><header class="visitorShareHeader"><h2 id="visitorShareTitle">分享導覽</h2><button id="closeShare" type="button" aria-label="關閉分享"></button></header><div class="visitorShareBody"><div class="visitorShareControls"><label class="visitorShareOption" for="shareCurrent"><input id="shareCurrent" type="checkbox"><span><strong>從目前場景開始</strong><small>勾選後，訪客會從你目前觀看的場景進入。</small></span></label><div class="visitorShareLink"><label for="shareURL">導覽連結</label><div class="visitorShareLinkRow"><input id="shareURL" readonly aria-label="分享網址" spellcheck="false"><button id="copyShare" type="button">複製連結</button></div><p id="shareStatus" role="status" aria-live="polite"></p></div><p id="localNote" hidden>目前為本機連結，其他裝置尚無法連線。</p></div><figure class="visitorShareQR"><img id="shareQR" alt="導覽分享 QR Code"><figcaption>掃描 QR Code 開啟導覽</figcaption></figure><p class="visitorSharePinNote"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="10" width="14" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3m-4 5v2"/></svg><span><strong>分享連結及 QR Code 不會包含或揭露 PIN 碼。</strong><br>若導覽設有 PIN 保護，首次開啟或驗證失效時，觀看者仍需輸入 PIN 碼。</span></p></div><footer class="visitorShareFooter"><p class="studioCopyright">© <a href="https://super720.com" target="_blank" rel="noopener noreferrer">Super720.com</a>｜Ai Virtual Tour Studio. All rights reserved.</p></footer></dialog>
+</body>
+</html>

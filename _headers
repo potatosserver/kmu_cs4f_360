@@ -1,0 +1,101 @@
+/
+  Content-Type: text/html; charset=utf-8
+
+/*/
+  Content-Type: text/html; charset=utf-8
+
+/viewer/krpano.js
+  Content-Type: text/javascript; charset=utf-8
+
+/*/viewer/krpano.js
+  Content-Type: text/javascript; charset=utf-8
+
+/viewer/static-tour-viewer.js
+  Content-Type: text/javascript; charset=utf-8
+
+/*/viewer/static-tour-viewer.js
+  Content-Type: text/javascript; charset=utf-8
+
+/viewer/viewer-ui-layout.js
+  Content-Type: text/javascript; charset=utf-8
+
+/*/viewer/viewer-ui-layout.js
+  Content-Type: text/javascript; charset=utf-8
+
+/viewer/tour-editor.css
+  Content-Type: text/css; charset=utf-8
+
+/*/viewer/tour-editor.css
+  Content-Type: text/css; charset=utf-8
+
+/viewer/photoswipe.css
+  Content-Type: text/css; charset=utf-8
+
+/*/viewer/photoswipe.css
+  Content-Type: text/css; charset=utf-8
+
+/viewer/viewer-branding.css
+  Content-Type: text/css; charset=utf-8
+
+/*/viewer/viewer-branding.css
+  Content-Type: text/css; charset=utf-8
+
+/viewer/tour-viewer.css
+  Content-Type: text/css; charset=utf-8
+
+/*/viewer/tour-viewer.css
+  Content-Type: text/css; charset=utf-8
+
+/viewer/viewer-ui-layout.css
+  Content-Type: text/css; charset=utf-8
+
+/*/viewer/viewer-ui-layout.css
+  Content-Type: text/css; charset=utf-8
+
+/viewer/ui-close.css
+  Content-Type: text/css; charset=utf-8
+
+/*/viewer/ui-close.css
+  Content-Type: text/css; charset=utf-8
+
+/viewer/gallery.css
+  Content-Type: text/css; charset=utf-8
+
+/*/viewer/gallery.css
+  Content-Type: text/css; charset=utf-8
+
+/viewer/model3d.css
+  Content-Type: text/css; charset=utf-8
+
+/*/viewer/model3d.css
+  Content-Type: text/css; charset=utf-8
+
+/viewer/map-hotspot.css
+  Content-Type: text/css; charset=utf-8
+
+/*/viewer/map-hotspot.css
+  Content-Type: text/css; charset=utf-8
+
+/viewer/vendor/model-viewer-4.4.0.css
+  Content-Type: text/css; charset=utf-8
+
+/*/viewer/vendor/model-viewer-4.4.0.css
+  Content-Type: text/css; charset=utf-8
+
+/index.html
+  Content-Type: text/html; charset=utf-8
+
+/*/index.html
+  Content-Type: text/html; charset=utf-8
+
+/data.json
+  Content-Type: application/json; charset=utf-8
+
+/*/data.json
+  Content-Type: application/json; charset=utf-8
+
+/package-info.json
+  Content-Type: application/json; charset=utf-8
+
+/*/package-info.json
+  Content-Type: application/json; charset=utf-8

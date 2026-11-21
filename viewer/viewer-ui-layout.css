@@ -1,0 +1,5 @@
+body.viewer-ui-custom .viewer-tools-open #dock{transform:var(--viewer-ui-tools-transform,translateX(-50%))!important}
+body.viewer-ui-custom:not(.viewer-tools-open) #dock{transform:translate(-50%,calc(100% + 50px))!important}
+body.viewer-ui-custom #visitorFilmstrip{max-width:100vw;transform:translate(var(--viewer-ui-filmstrip-x,0),105%)}
+body.viewer-ui-custom.viewer-thumbs-open #visitorFilmstrip{transform:translate(var(--viewer-ui-filmstrip-x,0),0)}
+body.viewer-ui-custom #viewerDecoration{position:fixed;z-index:4;width:min(180px,28vw);height:auto;max-height:35vh;object-fit:contain;pointer-events:none}

@@ -1,0 +1,35 @@
+#poiViewer .galleryStage{position:relative;min-width:0;width:100%;overflow:hidden;border-radius:14px;background:#17211c}
+#poiViewer .galleryHero{position:relative;display:block;width:100%;height:clamp(180px,48dvh,620px);padding:0;border:0;background:transparent;box-shadow:none;overflow:hidden;cursor:zoom-in;transform:none}
+#poiViewer .galleryHero img{position:absolute;inset:0;width:100%;height:100%;max-height:none;object-fit:contain;margin:0;border-radius:0;transition:opacity .2s ease;opacity:1}
+#poiViewer .galleryHero .galleryIncoming{opacity:0}#poiViewer .galleryHero .galleryVisible{opacity:1}#poiViewer .galleryHero .galleryOutgoing{opacity:0}
+#poiViewer .galleryControls{display:flex;align-items:center;justify-content:center;gap:10px;padding:12px 0}
+#poiViewer .galleryControls button{min-height:42px;min-width:42px;padding:8px 12px;border:1px solid #a5b5ac;border-radius:10px;background:#f5f8f6;color:#294439;box-shadow:none;transform:none;font:700 15px/1.3 system-ui}
+#poiViewer .galleryControls button:hover:enabled{background:#e1ece5}#poiViewer .galleryControls button:active:enabled{background:#cadfd2}#poiViewer .galleryControls button:disabled{opacity:.35;cursor:default}#poiViewer .galleryCounter{min-width:62px;text-align:center;font-size:14px;font-variant-numeric:tabular-nums}#poiViewer .galleryExpand{margin-left:auto}
+#poiViewer .galleryStrip{display:flex;gap:8px;overflow-x:auto;padding:4px 2px 8px;overscroll-behavior:contain}
+#poiViewer .galleryStrip button{flex:0 0 76px;width:76px;height:60px;padding:3px;border:2px solid transparent;border-radius:9px;background:#edf2ee;box-shadow:none;transform:none}
+#poiViewer .galleryStrip button[aria-current=true]{border-color:#88b94d;background:#e7f7d9}#poiViewer .galleryStrip img{width:100%;height:100%;max-height:none;object-fit:cover;margin:0;border-radius:5px}
+body #poiViewer.galleryExpanded[open]{position:fixed;inset:0;margin:0!important;width:100vw!important;max-width:100vw!important;height:100dvh!important;max-height:100dvh!important;padding:0!important;border:0!important;border-radius:0!important;overflow:hidden!important;transform:none!important;backdrop-filter:none!important}
+#poiViewer.galleryExpanded>:not(.pswp){visibility:hidden}#poiViewer.galleryExpanded>.pswp{position:absolute;inset:0;width:100%;height:100%;visibility:visible}
+@media(prefers-reduced-motion:reduce){#poiViewer .galleryHero img{transition:none}}
+@media(max-width:600px){#poiViewer .galleryHero{height:40dvh}#poiViewer .galleryControls{gap:6px}#poiViewer .galleryControls button{min-height:44px;min-width:44px}#poiViewer .galleryStrip button{flex-basis:64px;width:64px;height:52px}}
+/* Keep global card button styling out of the photo viewer controls. */
+#poiViewer.galleryExpanded::before,#poiViewer.galleryExpanded::after{display:none!important}
+#poiViewer .pswp .pswp__button:not(.pswp__button--close){box-sizing:border-box;width:44px;height:44px;min-width:44px;min-height:44px;margin:6px;padding:0;border:1px solid #ffffff4d;border-radius:10px;background:#24352fcc;color:white;box-shadow:none;transform:none}
+#poiViewer .pswp .pswp__button:not(.pswp__button--close):hover{background:#3a5146ee}
+#poiViewer .pswp .pswp__button--arrow{width:48px!important;height:56px!important;margin-top:-28px!important;position:absolute;top:50%;border-radius:12px}
+#poiViewer .pswp .pswp__button .pswp__icn{width:30px;height:30px;left:7px;top:7px;fill:white;filter:none}
+#poiViewer .pswp .pswp__button--arrow .pswp__icn{left:9px;top:13px}
+/* R210: explicit vector controls, independent of PhotoSwipe's 60px icon defaults. */
+#poiViewer .galleryControls button{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-width:46px;min-height:46px}
+#poiViewer .galleryControls button svg{display:block;flex:none;width:30px;height:30px;margin:0;overflow:visible}
+#poiViewer .galleryExpand svg{width:26px!important;height:26px!important}
+#poiViewer .pswp .pswp__button--arrow{display:flex!important;align-items:center;justify-content:center;width:52px!important;height:60px!important;top:50%!important;bottom:auto!important;margin:-30px 0 0!important;padding:0!important;transform:none!important}
+#poiViewer .pswp .pswp__button--arrow--prev{left:max(14px,env(safe-area-inset-left))!important;right:auto!important}
+#poiViewer .pswp .pswp__button--arrow--next{right:max(14px,env(safe-area-inset-right))!important;left:auto!important}
+#poiViewer .pswp .pswp__button--arrow .pswp__icn{position:static!important;display:block!important;inset:auto!important;margin:0!important;width:34px!important;height:34px!important;transform:none!important;fill:none!important;stroke:currentColor!important;overflow:visible}
+#poiViewer .pswp .pswp__top-bar{box-sizing:border-box;display:flex;align-items:center;gap:8px;padding:max(12px,env(safe-area-inset-top)) max(14px,env(safe-area-inset-right)) 0 14px;height:auto;min-height:58px}
+#poiViewer .pswp .pswp__top-bar .pswp__button{position:relative;flex:none;display:grid;place-items:center;width:44px!important;height:44px!important;min-width:44px!important;min-height:44px!important;margin:0!important;padding:0!important;transform:none!important}
+#poiViewer .pswp .pswp__counter{align-self:center;margin:0 auto 0 0;line-height:44px;height:44px}
+#poiViewer .pswp .pswp__preloader{display:none}
+@media(max-width:600px){#poiViewer .pswp .pswp__button--arrow{width:44px!important;height:52px!important;margin-top:-26px!important}#poiViewer .pswp .pswp__button--arrow--prev{left:8px!important}#poiViewer .pswp .pswp__button--arrow--next{right:8px!important}}
+#poiViewer .pswp .pswp__button--arrow .pswp__icn{color:#fff!important;stroke:#fff!important}

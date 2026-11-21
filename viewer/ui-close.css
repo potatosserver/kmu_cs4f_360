@@ -1,0 +1,14 @@
+/* Important layer deliberately outranks legacy unlayered page rules.
+   No position, visibility, click handlers, dialog or dirty-state behavior is changed. */
+@layer ui-close-controls {
+ button.uiCloseButton{box-sizing:border-box!important;display:inline-grid!important;place-items:center!important;grid-template-columns:1fr!important;grid-template-rows:1fr!important;width:38px!important;height:38px!important;min-width:38px!important;min-height:38px!important;max-width:38px!important;max-height:38px!important;flex:0 0 38px!important;padding:0!important;border:1px solid #d3dfe8!important;border-radius:10px!important;background:#fff!important;color:transparent!important;font-size:0!important;line-height:0!important;text-indent:0!important;box-shadow:none!important;transform:none!important;cursor:pointer!important;overflow:hidden!important;gap:0!important;vertical-align:middle!important;transition:background-color .14s,border-color .14s!important;}
+ button.uiCloseButton>*{display:none!important;}
+ button.uiCloseButton::before{content:""!important;display:block!important;grid-area:1/1!important;width:18px!important;height:18px!important;background:#52687b!important;mask:url('/ui-close.svg') center/contain no-repeat!important;-webkit-mask:url('/ui-close.svg') center/contain no-repeat!important;border:0!important;position:static!important;transform:none!important;}
+ button.uiCloseButton::after{content:none!important;display:none!important;}
+ @media(hover:hover){button.uiCloseButton:hover:not(:disabled){background:#eaf2f9!important;border-color:#a9c2d6!important;}button.uiCloseButton:hover:not(:disabled)::before{background:#315f83!important;}}
+ button.uiCloseButton:active:not(:disabled){background:#d6e6f3!important;border-color:#799fbe!important;}button.uiCloseButton:active:not(:disabled)::before{background:#234f71!important;}
+ button.uiCloseButton:focus-visible{outline:2px solid #5287b0!important;outline-offset:3px!important;}button.uiCloseButton:disabled{opacity:.45!important;cursor:default!important;}
+ button.uiCloseButton[hidden],button.uiCloseButton.hidden,button.uiCloseButton[style*="display: none"],button.uiCloseButton[style*="display:none"]{display:none!important;}
+ @media(pointer:coarse){button.uiCloseButton{width:44px!important;height:44px!important;min-width:44px!important;min-height:44px!important;max-width:44px!important;max-height:44px!important;flex-basis:44px!important;}}
+ @media(prefers-reduced-motion:reduce){button.uiCloseButton{transition:none!important;}}
+}

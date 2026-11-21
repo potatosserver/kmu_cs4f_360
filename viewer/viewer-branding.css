@@ -1,0 +1,22 @@
+#projectBranding{position:absolute;inset:0;pointer-events:none;z-index:5}.projectBrandLogo{position:absolute;left:16px;top:16px;pointer-events:auto;display:grid;place-items:center;min-height:38px;max-width:min(280px,38vw);box-sizing:border-box;padding:7px 11px;border:1px solid var(--v-line,#ffffffaa);border-radius:13px;background:var(--v-glass,rgba(24,24,24,.48));box-shadow:var(--v-shadow,0 2px 8px #0004);backdrop-filter:blur(12px);color:white;text-decoration:none;text-shadow:0 1px 3px #0008}.projectBrandLogo img{max-width:28vw;max-height:90px;object-fit:contain}.projectBrandText{font:600 clamp(13px,1.7vw,20px)/1.2 system-ui,sans-serif;letter-spacing:.02em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.projectWatermark{position:absolute;max-width:80vw;overflow-wrap:anywhere;color:#fff;text-shadow:0 1px 3px #000,0 0 2px #000;pointer-events:none;padding:12px;font-family:system-ui,sans-serif}.projectWatermark[data-position=top-left]{left:8px;top:8px}.projectWatermark[data-position=top-right]{right:8px;top:8px}.projectWatermark[data-position=bottom-left]{left:8px;bottom:150px}.projectWatermark[data-position=bottom-right]{right:8px;bottom:150px}.projectWatermark[data-position=center]{top:50%;left:50%;transform:translate(-50%,-50%)}body:has(.projectBrandLogo) .visitorTitle{left:auto;right:20px;text-align:right}#projectDescription{font-size:13px;max-width:min(460px,75vw);white-space:pre-wrap;max-height:100px;overflow:auto}.projectDescriptionToggle{font-size:12px;padding:4px 8px}
+
+.projectWatermark[data-position=upper-third]{top:33.333%;left:50%;transform:translate(-50%,-50%)}.projectWatermark[data-position=lower-third]{top:66.667%;left:50%;transform:translate(-50%,-50%)}
+html[data-viewer-palette=burgundy]{--viewer-accent:#843a51}html[data-viewer-palette=graphite]{--viewer-accent:#606773}html[data-viewer-palette=tool]{--viewer-accent:#3976bd}html[data-viewer-palette=ivory]{--viewer-accent:#a99572}
+
+body.pausedTour{margin:0;min-height:100vh;display:grid;place-items:center;background:#202724;color:white;font-family:system-ui;text-align:center}.pausedTourIcon{font-size:48px}
+/* Shared, publication-owned color system: preview and public Viewer. */
+html[data-viewer-palette=burgundy]{--v-glass:rgba(91,28,48,.48);--v-button:#702c45;--v-selected:#b35b7b;--v-line:#e2a5bb;--viewer-accent:#b35b7b}
+html[data-viewer-palette=graphite]{--v-glass:rgba(36,43,53,.52);--v-button:#343e4b;--v-selected:#77889e;--v-line:#c0cbd9;--viewer-accent:#77889e}
+html[data-viewer-palette=tool]{--v-glass:rgba(21,61,109,.46);--v-button:#20558c;--v-selected:#3a91d4;--v-line:#9cd5ff;--viewer-accent:#3a91d4}
+html[data-viewer-palette=ivory]{--v-glass:rgba(231,216,186,.65);--v-button:#75613e;--v-selected:#a98b50;--v-line:#f4dfaa;--viewer-accent:#a98b50}
+html[data-viewer-palette]{--v-ink:#fff;--v-shadow:0 2px 8px #0004}
+html[data-viewer-palette] :is(#dock,#visitorScenes,#previewTools,#previewThumbs){background:var(--v-glass);border:1px solid var(--v-line);box-shadow:var(--v-shadow);backdrop-filter:blur(14px)}
+html[data-viewer-palette] :is(#dock button,.visitorShare button,.visitorFullscreen button,#drawerToggle,#previewTools button,.previewCornerControls button){background:var(--v-button);color:var(--v-ink);border:1px solid var(--v-line);box-shadow:var(--v-shadow)}
+html[data-viewer-palette] :is(#dock button,.visitorShare button,.visitorFullscreen button,#previewTools button,.previewCornerControls button) img{filter:brightness(0) invert(1)}
+html[data-viewer-palette] :is(#dock button,#previewTools button)[aria-pressed=true]{background:var(--v-selected);box-shadow:0 0 0 2px var(--v-line)}
+html[data-viewer-palette] :is(#sceneTitle,#previewScene){background:var(--v-glass);color:white;border:1px solid var(--v-line);text-shadow:0 1px 3px #000a;box-shadow:var(--v-shadow);backdrop-filter:blur(12px)}
+html[data-viewer-palette] :is(#visitorScenes,#previewThumbs) button[aria-current=true]{border-color:var(--v-line);box-shadow:0 0 0 2px var(--v-selected)}
+html[data-viewer-palette] :is(#shareDialog,#passwordDialog){background:color-mix(in srgb,var(--v-button) 18%,#fff)!important;color:#242424;border:2px solid var(--v-line);box-shadow:0 8px 40px #0006}
+html[data-viewer-palette] :is(#shareDialog button,#passwordForm>button){background:var(--v-button);color:white;border-color:var(--v-line)}
+html[data-viewer-palette] #shareQR{background:white;padding:8px}
+.visitorPinSlots{grid-template-columns:repeat(6,minmax(32px,40px))}
